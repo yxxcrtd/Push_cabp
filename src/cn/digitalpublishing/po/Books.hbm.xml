@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="cn.digitalpublishing.po.Books" table="T_BOOKS">
+        <id name="id" type="java.lang.String">
+            <column name="id" length="32">
+            	<comment>UUID主键</comment>
+            </column>
+            <generator class="uuid.hex" />
+        </id>
+        
+        <property name="orderNo" type="java.lang.String">
+            <column name="orderNo" length="32">
+            	<comment>征订号</comment>
+            </column>
+        </property>
+        
+        <property name="title" type="java.lang.String">
+            <column name="title" length="500">
+            	<comment>产品名</comment>
+            </column>
+        </property>
+        
+        <property name="filePath" type="java.lang.String">
+            <column name="filePath" length="128">
+            	<comment>路径</comment>
+            </column>
+        </property>
+
+        <property name="author" type="java.lang.String">
+            <column name="author" length="320">
+            	<comment>作者</comment>
+            </column>
+        </property>
+        
+        <property name="publishDate" type="java.util.Date">
+            <column name="publishDate">
+            	<comment>出版时间</comment>
+            </column>
+        </property>
+        
+        <property name="pagend" type="java.lang.Integer">
+            <column name="pagend" length="32">
+            	<comment>结束页</comment>
+            </column>
+        </property>
+        
+        <property name="category" type="java.lang.String">
+            <column name="category">
+            	<comment>类别</comment>
+            </column>
+        </property>
+        
+         <property name="isbn" type="java.lang.String">
+            <column name="isbn" length="32">
+            	<comment>ISBN号</comment>
+            </column>
+        </property>
+        
+        <property name="price" type="java.math.BigDecimal">
+            <column name="price" precision="10" scale="2">
+            	<comment>纸书定价</comment>
+            </column>
+        </property>
+        
+        <property name="onPrice" type="java.math.BigDecimal">
+            <column name="onPrice" precision="10" scale="2">
+            	<comment>电子书在线阅读价</comment>
+            </column>
+        </property>
+        
+         <property name="offPrice" type="java.math.BigDecimal">
+            <column name="offPrice" precision="10" scale="2">
+            	<comment>电子书离线阅读价</comment>
+            </column>
+        </property>
+        
+         <property name="publisher" type="java.lang.String">
+            <column name="publisher" length="128">
+            	<comment>出版社名称</comment>
+            </column>
+        </property>
+        
+        <property name="location" type="java.lang.String">
+            <column name="location" length="128">
+            	<comment>出版社地址</comment>
+            </column>
+        </property>
+        
+        <property name="edition" type="java.lang.String">
+            <column name="edition" length="64">
+            	<comment>版别版次</comment>
+            </column>
+        </property>
+        
+        <property name="page" type="java.lang.Integer">
+            <column name="page">
+            	<comment>页数</comment>
+            </column>
+        </property>
+        
+        <property name="frame" type="java.lang.String">
+            <column name="frame" length="32">
+            	<comment>装帧</comment>
+            </column>
+        </property>
+        
+        <property name="format" type="java.lang.String">
+            <column name="format" length="32">
+            	<comment>开本</comment>
+            </column>
+        </property>
+        
+        <property name="sheet" type="java.math.BigDecimal">
+            <column name="sheet" precision="10" scale="2">
+            	<comment>印张</comment>
+            </column>
+        </property>
+        
+        <property name="cover" type="java.lang.String">
+            <column name="cover" length="64">
+            	<comment>封面</comment>
+            </column>
+        </property>
+        
+        <property name="url" type="java.lang.String">
+            <column name="url" length="128">
+            	<comment>URL回链地址</comment>
+            </column>
+        </property>
+        
+        <property name="introduction" type="java.lang.String">
+            <column name="introduction" length="2000">
+            	<comment>产品简介</comment>
+            </column>
+        </property>
+        
+        <property name="keyword" type="java.lang.String">
+            <column name="keyword" length="64">
+            	<comment>关键词</comment>
+            </column>
+        </property>
+        
+        <property name="language" type="java.lang.String">
+            <column name="language" length="64">
+            	<comment>语种</comment>
+            </column>
+        </property>
+        
+        <property name="size" type="java.lang.String">
+            <column name="size" length="64">
+            	<comment>尺寸</comment>
+            </column>
+        </property>
+        
+        <property name="copyrightYear" type="java.util.Date">
+            <column name="copyrightYear">
+            	<comment>版权年</comment>
+            </column>
+        </property>
+        
+        <property name="series" type="java.lang.String">
+            <column name="series" length="64">
+            	<comment>丛书名</comment>
+            </column>
+        </property>
+        
+        <property name="subTitle" type="java.lang.String">
+            <column name="subTitle" length="64">
+            	<comment>副标题</comment>
+            </column>
+        </property>
+        
+        <property name="discount" type="java.lang.String">
+            <column name="discount" length="16">
+            	<comment>折扣率</comment>
+            </column>
+        </property>
+        
+        <property name="createTime" type="java.util.Date">
+            <column name="createTime">
+            	<comment>创建时间</comment>
+            </column>
+        </property>
+        
+        <property name="cunZai" type="java.lang.String">
+            <column name="cunZai"  default="0">
+            	<comment>是否存在</comment>
+            </column>
+        </property>
+        
+        <set name="taskSet" inverse="true">
+            <key>
+                <column name="booksid" length="32"/>
+            </key>
+            <one-to-many class="cn.digitalpublishing.po.Task"/>
+        </set>
+    </class>
+</hibernate-mapping>

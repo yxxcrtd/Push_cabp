@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="cn.digitalpublishing.po.FtpDirConfigure" table="T_DIRCONFIGURE">
+        <id name="id" type="java.lang.String">
+            <column name="id" length="32">
+            	<comment>文件夹ID</comment>
+            </column>
+            <generator class="uuid.hex" />
+        </id>
+        <property name="ftpdir" type="java.lang.String">
+            <column name="ftpdir" length="256">
+            	<comment>ftp目录</comment>
+            </column>
+        </property>
+        
+        <property name="dirName" type="java.lang.String">
+            <column name="dirName" length="256">
+            	<comment>文件名称</comment>
+            </column>
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="description" length="64">
+            	<comment>文件夹描述</comment>
+            </column>
+        </property>
+        
+        <many-to-one name="ftpConfigure" class="cn.digitalpublishing.po.FtpConfigure" fetch="select" lazy="false">
+        	<column name="FTPID" length="32" ></column>
+        </many-to-one>
+        
+        
+    </class>
+</hibernate-mapping>

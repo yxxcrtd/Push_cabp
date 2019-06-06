@@ -1,0 +1,930 @@
+
+/* Headings
+* --------------------------------------------------------------------- */
+h1,h2,h3,h4,h5,h6 {
+	color: #111;
+}
+
+/* Text Elements
+* --------------------------------------------------------------------- */
+a {
+	color: #125AA7;
+	text-decoration: underline;
+	outline: none;
+}
+a:hover {
+	color: #000;
+}
+blockquote {
+	color: #666;
+}
+
+pre {
+	background: #eee;
+	border: 1px solid #ccc;
+}
+
+hr {
+	background: #ccc;
+	color: #ccc;
+	clear: both;
+	height: 1px;
+	line-height: 1px;
+}
+h5 a{
+	_font-weight: bold !important;
+}
+
+/* Tables
+* --------------------------------------------------------------------- */
+table {
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+th,td {
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+/* Default Classes
+* --------------------------------------------------------------------- */
+p.quiet {
+	color: #666;
+}
+.alt {
+	color: #666;
+}
+p.title {
+  color: #111;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+input,select,textarea{
+	vertical-align: middle;
+}
+.fleft{float: left}
+.fright{float: right}
+input.text, input.title{
+	padding: 1px;
+}
+p:last-child,ul:last-child,ol:last-child,.last{
+	margin-bottom: 0;
+}
+.content img{
+	margin: 0 1.5em 1.5em 0;
+}
+.content img.fright{
+	border: 1px solid #0f4d7a;
+	margin: 0 0 1.5em 1.5em;
+}
+.clear{
+	clear: both;
+}
+label{
+	font-weight: normal;
+	vertical-align: middle;
+}
+/*  */
+
+.meta-header{
+	margin: -1.5em 0 1.5em 0;
+	font-size: 1.3em;
+}
+span.meta-key{
+	font-weight: bold;
+}
+ul.flat{
+	list-style: none;
+	margin-left: 0;
+	margin-right: 0;
+	overflow: hidden;
+}
+.bobby{
+	margin: 0;
+	list-style: none;
+}
+.bobby li{
+	float: left;
+	margin-right: 10px;
+}
+.bobby li:last-child,.bobby .last{
+	margin-right: 0;
+}
+.navigate-resources{
+	margin-bottom: 1.5em;
+	line-height: 1;
+}
+.navigate-resources li{
+	border-right: 1px solid #aaa;
+	padding-right: 10px;
+}
+.navigate-resources li:last-child{
+	border-right: none;
+}
+#sizeswitcher a.two{font-size: 1.2em}
+#sizeswitcher a.three{font-size: 1.4em}
+#sizeswitcher a.four{font-size: 1.6em}
+.paginator{
+	margin-bottom: 1em;
+}
+.separated-list{
+	border-top: 1px dotted #ccc;
+}
+.separated-list > li{
+	border-bottom: 1px dotted #ccc;
+	padding: .75em 0;
+}
+.separated-list li img.cover{
+	margin: 0 .75em 0 0;
+	height: 75px;
+}
+.separated-list h5, .issue-list h5{
+	margin-bottom: 0;
+}
+.checkbox-list > li{
+	padding-left: 26px;
+}
+.checkbox-list .checkbox{
+	margin-left: -26px;
+	float: left;
+	_position: relative;
+	_margin-left: -13px;
+}
+.checkbox-list .checkbox input{
+	float: left;
+}
+.publication-type{
+	float: left;
+	width: 5.5em;
+	font-size: 0.9em;
+	line-height: 1.8em;
+	text-align: right;
+}
+
+.publication-type img.cover {
+	border:1px solid #0f4d7a;
+	}
+	
+.contentwrap img.cover {
+	border:1px solid #0f4d7a;
+	}
+	
+.list-meta-container{
+	margin-left: 5.5em;
+	padding-left: 10px;
+}
+img.cover {
+	max-width: 150px;
+	max-height: 200px;
+}
+.separator{
+	clear: both;
+	border-bottom: 1px dotted #ccc;
+}
+.download{
+	border: 1px solid #ccc;
+	padding: 1.5em;
+	background: #eee;
+}
+.contain,.bobby,.separated-list li,.meta-body li{
+	overflow: hidden;
+	_overflow: visible;
+	_height: 1%;
+}
+
+/* toggle lists */
+a.toggle{
+	padding-left: 10px;
+	background: url(/images/jp/expand.gif) no-repeat left center;
+}
+.toggle a.expanded, a.toggle.expanded{
+	background-image: url(/images/jp/collapse.gif);
+}
+
+ul.togglecontent{
+	margin-left: 10px;
+}
+
+li.refdetail {
+	padding-left:10px;
+	}
+	
+ul.expandable li.refdetail {
+		background: url(/images/jp/expand.gif) no-repeat left center;
+	}
+
+ul.display li.refdetail {
+		background-image: url(/images/jp/collapse.gif);
+	}
+
+ul.expandable .hidden {
+	display: none;
+}
+	
+/* KEY */
+.keyicon {
+	margin-right:3px;
+	width:12px;
+	height:12px;
+	display:inline-block;
+	line-height: 12px;
+}
+.access_icon_n{background-color: #ff0000;color: #ffffff;width:12px;}
+.access_icon_oa{background-color: #ad00cc;color: #ffffff;}
+.access_icon_s{background-color: #ff9900;color: #ffffff;}
+.access_icon_f{background-color: #0033cc;color: #ffffff;}
+.access_icon_t{background-color: #339900;color: #ffffff;}
+
+.keyicon {
+	display:inline-block;
+	width:20px;
+	text-align: center;
+	font-weight: bold;
+	margin-right:5px;
+	padding: 1px;
+	line-height: 12px;
+	text-transform:uppercase;
+	font-size: 11px;	
+}
+/* */
+
+.a_to_z{
+	font-size: 1.2em;
+	margin-top:-.75em;
+	margin-bottom: .75em;
+	letter-spacing: 1px;
+}
+#filter-by-subcat{
+	margin-top: -.5em;
+}
+.toc .fulltext{
+	float: left;
+}
+.sections{
+	margin-bottom: 1.5em;
+}
+.sections > li > ul{
+	margin-bottom: 0;
+}
+.sections .separated-list{
+	border-top: 0;
+}
+.sections > li h4{
+	margin-bottom: 0;
+	padding: .25em;
+	background: #eee;
+	border-bottom: 1px dotted #ccc;
+}
+.sections > li:first-child h4{
+	border-top: 1px dotted #ccc;
+}
+.sections ul.togglecontent{
+	margin-left: 0;
+	_zoom: 1;
+	_position: relative;
+}
+.access-options{
+	padding: 1.5em 1.5em 1.5em 0.25em;	
+	border: 1px dotted #ccc;
+	border-width: 1px 0;
+	background: #eee;
+	margin-bottom: 1.5em;
+}
+.access-options h5{
+	margin-bottom: 0;
+}
+.std-form li, .std-form ul{
+	margin-bottom: 1.5em;
+}
+.std-form li:last-child{
+	margin-bottom: 0;
+}
+.annual-list{
+	font-size: 1.2em;
+}
+.fulltext-label{
+	margin-right: 20px;
+}
+h4 .admin-links{
+	font-size: 0.9em;
+}
+.mask{
+	visibility:hidden;
+}
+.searchresultlink, .returntoparentlink {
+	padding-left:19em;
+}
+.content img.access-icon{
+	vertical-align: middle;
+	margin: 0 5px 0 0;
+	height: auto !important;
+	width: auto !important;}
+	
+#articlereference a  {
+			text-decoration: underline;
+}
+
+#articlereference .stripe {
+	background-color: #ebebeb;
+	}
+
+#articlereference .referencematch {
+background-color: #fff;
+padding: 5px;
+border: 1px solid black;
+	}
+#articlereference .referencematch li{
+	padding-bottom: 5px;
+	}
+
+a.expandLinkClass{
+        padding-left: 10px;
+        background: url(/images/jp/expand.gif) no-repeat left center;
+                }
+span.ajax-loading {
+        background: #fff url(/images/admin/spinner.gif) no-repeat left 50%;
+        display: block;
+        }
+.facets .hidden, .facets .hiddenprop {
+	display: none;
+}
+.facets h3 {
+    font-size: 1.1em;
+    margin: 2px 0 2px 3px;
+}
+.facets p {
+	margin: 2px 0 2px 3px;
+	font-size: 0.9em;
+}
+#subjectList ul, .subjectList ul {
+	float: left;
+}
+#subjectList ul.last, .subjectList ul.last {
+	margin-left: 10px;
+}
+.subjectList ul {
+	width: 45%;
+}
+.facets, .issueBar {
+	float: left;
+	border: 1px solid black;
+	width: 170px;
+	padding: 3px;
+}
+.publistwrapper {
+	margin-left: 200px;
+}
+.nofacetmargin {
+	margin-left: 0!important;
+}
+.publistwrapper p {
+	margin-bottom: 5px;
+}
+.publistwrapper li.description {
+	display: none;
+}
+.pubsortoptions {
+	float: right;
+}
+.pubsortoptions .active {
+	font-weight: bold;
+}
+.publistwrapper li .minus {
+	display: none;
+}
+.underline {
+	text-decoration: underline;
+}
+.publistwrapper li.showhide {
+	cursor: pointer;
+}
+.publistwrapper  .a_to_z {
+	 margin-top: 0!important;
+}
+.perpageoptions {
+	float: right;
+}
+.publistwrapper li.odd {
+	background-color: #F2F2F2;
+}
+.publistwrapper .separated-list > li {
+    padding: 5px;
+}
+.journaltopleft {
+	float: left;
+    width: 250px;
+    padding-right: 10px;
+}
+.journaltopright {
+	margin-left: 250px;
+}
+.journaltopleft .meta-header {
+	font-size: 0.9em;
+	margin: 0;
+}
+.journalDivider {
+	margin-top: 5px;
+}
+.showhideall {
+	float: right;
+}
+.showhideall .inactive {
+	text-decoration: none;
+	cursor: default;
+	color: #000000;
+}
+.publistwrapper li.description .embodimentcontainer {
+	float: right;
+}
+.buymessage {
+	font-weight: bold;
+}
+.articletopright {
+	float:right;
+	margin-top: -15px;
+}
+.meta-header {
+    font-size: 0.9em;
+    margin: 0;	
+}
+.embodimentOption {
+	float: left;
+}
+.addtofavourites {
+	float: right;
+	clear: right;
+}
+.articletopright .embodimentcontainer {
+	border: 1px solid black;
+	padding: 5px 10px 5px 10px;
+	margin-bottom: 10px;
+}
+.articlenav {
+	margin: 10px 0;
+}
+#tabbedpages, #articleTabs {
+	clear: both;
+	overflow: hidden;
+}
+.tabset li .disabled {
+	color: #999999!important;
+}
+.publistwrapper.chapters, .publistwrapper.subjectlist {
+	margin-left: 0;
+}
+.pubtopleft img {
+	float: left;
+}
+.pubtopright {
+	float: right;
+	margin: -10px 0 10px 0;
+}
+.pubtopright .access-options, .pubtopright .embodimentcontainer {
+	padding: 10px;
+	margin: 0;
+	background-color: #ffffff;
+	border: 1px solid black;
+	max-width: 250px;
+}
+.pubtopright .addtofavourites {
+	margin-top: 10px;
+}
+.pubmetadata.col2 {
+	margin-left: 20px;
+}
+.articlemetadata, .chaptermetadata {
+	margin-bottom: 10px;
+}
+.mostviewedcontent {
+	padding: 20px;
+	border: 1px solid black;
+	margin: 10px 0;
+}
+.recommendother {
+	height: 150px;
+	width: 450px
+}
+#hiddenmorelikethisids, #hiddenmorelikethiswebid, #hiddenmorelikethisfields, #hiddenmorelikethisrestrictions, #hiddenmorelikethisnumber, #hiddenmorelikethisnumbershown {
+	display: none;
+}
+#morelikethis {
+	border: 1px solid black;
+	padding: 20px;
+	margin-top: 20px;
+}
+#morelikethis h4 {
+	margin-bottom: 5px;
+}
+#morelikethis .separated-list, #morelikethis .separated-list li {
+	margin: 0;
+	border: none;
+}
+#morelikethis .separated-list > li {
+	padding: 0 0 8px 0;
+}
+#morelikethis .morelink {
+	float: right;
+}
+.morelikethisloading {
+	margin-top: 20px;
+}
+.reporting-field {
+	margin-bottom: 10px;
+}
+.reporting-field .reporting-label {
+	float: left;
+	width: 11em;
+}
+.reporting-field input.text, .reporting-field input.title, .reporting-field textarea, .reporting-field select {
+    margin: 0 0 0.5em;
+}
+
+.reporting-field .error {
+	padding:0;
+	background-color:transparent;
+	background:none;
+	padding:0;
+	margin:0;
+	border:1px solid black;	
+}
+
+.reporting-field input.error {
+	padding: 2px;
+}
+
+.reporting-field label.error {
+	border:none;
+	padding-left: 10px;  
+}
+#fulltextframe {
+	width: 940px;
+	height: 560px;
+	height: 640px;
+    width: 100%;
+    border-top: 1px solid black;
+}
+#fulltext {
+	display: none;
+}
+#fulltext #contentarea {
+	border: 1px solid black;
+}
+
+#fulltext #contentarea .fulltextnavigation {
+	padding: 10px;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+#fulltext #contentarea .fulltextnavigation .toc .fulltextviewtoclink {
+	background-image: url(/images/jp/expandtoc.gif);
+	background-repeat:no-repeat;
+	background-position: right;
+	padding-right: 20px;
+}
+#fulltext #contentarea .fulltextnavigation .toc .fulltextviewtoclink.expanded {
+	background-image: url(/images/jp/collapsetoc.gif)!important;
+}
+#fulltext #contentarea .hiddenurl {
+	display: none;
+}
+#fulltext #contentarea .fulltextnavigation .nav, #fulltext #contentarea .fulltextnavigation .new, #fulltext #contentarea .fulltextnavigation .toc {
+	width: 30%;
+	float: left;
+}
+#fulltext #contentarea .fulltextnavigation .nav {
+	width: 45%;
+	text-align: right;
+}
+#fulltext #contentarea .fulltextnavigation .nav .inactive {
+	color: #cccccc;
+}
+#fulltext #contentarea .fulltextnavigation .new {
+	background-image: url(/images/jp/newwindow.gif);
+	background-repeat:no-repeat;
+	background-position: right;
+	width: 20%!important;
+	text-align: right;
+	padding-right: 20px;
+}
+#fulltext #title h2 {
+	font-size: 1.2em;
+}
+#fulltext #contentarea #fulltexttoc .toclist {
+	list-style: none;
+}
+#fulltext #contentarea #fulltexttoc .toclist li .minus {
+	display: none;
+}
+#fulltext #contentarea #fulltexttoc .toclist li .plus {
+	display: inline;
+}
+#fulltext #contentarea #fulltexttoc .toclist li .loadingspinner {
+	display: none;
+}
+#fulltext #contentarea #fulltexttoc .toclist li.active .loadingspinner {
+	display: block;
+}
+#fulltext #contentarea #fulltexttoc .toclist li.active .minus {
+	display: inline;
+}
+#fulltext #contentarea #fulltexttoc .toclist li.active .plus {
+	display: none;
+}
+#fulltext #contentarea #fulltexttoc .toclist .sectionlist {
+	display: none;
+	margin-right: 0;
+	list-style: none;
+}
+#fulltext #contentarea #fulltexttoc {
+	display: none;
+	margin-top: -25px;
+}
+#fulltext #contentarea #fulltexttoc .pageheading {
+	text-align: right;
+	margin-right: 10px;
+}
+#fulltexttoc .toclist {
+	margin-bottom: 10px;
+}
+#fulltexttoc .toclist li {
+	overflow: hidden;
+}
+#fulltexttoc .toclist li .pages {
+	float: right;
+}
+.fulltextoverlay {
+	position: relative;
+}
+.fulltextoverlay .ui-dialog-titlebar-close {
+	top: 15px!important;
+	z-index: 1000;
+}
+.metastore-tools-trigger .ui-icon, .pricing-tools-trigger .ui-icon {
+		background-image: url(/images/jp/ui-icons_cd0a0a_256x240.png)!important;
+}
+
+.layoutrow {
+	overflow: hidden;
+	border: 1px solid #cccccc;
+	margin: 15px 0;
+	padding: 15px 10px 15px 15px;
+}
+.layoutrow .layoutbox {
+	float: left;
+	margin: 10px 5px 10px 15px;
+	width: 200px;
+	padding: 0;
+}
+.layoutrow h4 {
+    border: 1px solid #cccccc;
+    float: left;
+    padding: 30px;
+    width: 150px;
+    margin: 0;
+}
+.layoutrow .layoutbox h5 {
+	margin-bottom: 5px;
+}
+.layoutrow .layoutbox.last {
+	margin-right: 0px;
+	margin-left: 5px;
+}
+.layoutrow .layoutbox ul {
+	list-style: none;
+	margin: 0;
+}
+.layoutrow .layoutboxrowwrapper {
+	float: left;
+	overflow: hidden;
+	width: 455px;
+}
+.layoutrow .layoutboxrowwrapper .token {
+	clear: left;
+	margin: 0 0 0 15px;
+	display: none;
+}
+.layoutrow .layoutboxrowwrapper .token h5 {
+	margin-bottom: 0px;
+}
+.layoutrow .layoutboxrowwrapper {
+	margin-bottom: 10px;
+}
+.hiddenblurbsvalues {
+	display: none;
+}
+#recommendForm fieldset .inputfield {
+	margin: 0 0 5px 0;
+	overflow: hidden;
+}
+#recommendForm fieldset .inputfield .label {
+	float: left;
+	width: 100px;
+	text-align: right;
+}
+#recommendForm fieldset .inputfield input {
+	float: left;
+	margin-left: 3px;
+}
+#recommendForm fieldset .inputfield input.long {
+	width: 500px;
+}
+#recommendForm .recommendbutton {
+	float: right;
+}
+#recommendForm .requiredindicator {
+	color: red;
+}
+#recommendForm .error {
+	padding: 0;
+	background-color: #ffffff;;
+	padding: 0;
+	margin: 0 5px;
+	border: 1px solid #8A1F11;
+}
+#recommendForm label.error {
+	border: none;
+	background: none;
+    clear: left;
+    display: block;
+    margin-left: 100px;
+    width: 100%;
+}
+.libraryupload {
+	margin-top: 5px;
+}
+.libraryupload .introBlurb{
+	margin:5px 0 10px 0;
+}
+.libraryupload .uploadformfield {
+	margin-bottom: 10px;
+}
+.libraryupload .uploadformfield label {
+	width:120px;
+	display:block;
+	float:left;
+}
+.libraryupload .uploadformfield .btn-orange {
+	margin:0;
+}
+.libraryupload .uploadsuccess, .libraryupload .uploaderror {
+	margin: 10px 0 10px 0;
+	color:#FF0000;
+}
+.brandedHeader {
+    background-color:#ffffff;
+}
+.brandedHeader .brandingWrapper {
+    text-align:left;
+    margin:0 auto;
+    width:990px;
+    padding:5px;
+    max-height:70px;
+}
+.brandedHeader .logoimage {
+    float:left; 
+    padding:0;
+    margin:0;
+}
+.brandedHeader .logoimage img {
+    max-height:60px;
+    padding:0;
+    border:0;
+    margin:0;
+}
+.brandedHeader .logotext {
+    padding: 5px;
+    font-family: arial,verdana,sans-serif;
+    overflow:hidden;
+}
+.imageinput, .titleanddescription {
+	border: 1px solid #cccccc;
+	padding: 10px;
+	margin: 10px 0;
+}
+.manageMarkedList {
+	position:relative;
+}
+.manageMarkedList p {
+	margin: 10px 0 5px 0;
+}
+.manageMarkedList .resultItem .pubType {
+	width:100px;
+}
+.manageMarkedList .resultItem .itemDescription {
+	margin-left:125px
+}
+.manageMarkedList form #updatemarkedlist {
+	margin-top:40px;
+    position:absolute;
+    right:0;
+}
+.manageMarkedList .displayPerPage {
+    margin-top:-5px;
+    position:absolute;
+    right:0;
+}
+.manageMarkedList form #bottomremovemarkedlist {
+    margin-top:-30px;
+    position:absolute;
+    right:0;
+}
+.lesssort{
+  padding-bottom:20px;
+}
+.manageMarkedList .lessdisplayPerPage {
+	float:right;	
+}
+.manageMarkedList form #lessbottomremovemarkedlist {
+    margin-top:10px;
+ }
+.manageMarkedList .paginator {
+    margin-top:1em;
+}
+ul.lessfloat{
+	margin-top:20px;	
+}
+.manageMarkedList ul.lessfloat {
+	margin-top:5px;
+}
+.searchWithinField {
+	color: #cccccc;
+}
+#searchWithinField {
+	width: 140px;
+}
+input.small {
+	margin-bottom: auto;
+}
+#codexframe {
+        width:100%;
+        border: 0px;
+        background-color:none;
+}
+
+/*fix alignment of meta data on article page*/
+
+.pubmetadata {
+	width: 100%;
+	
+}
+
+.pubmetadata > div {
+	float: left;
+	width: 250px;
+}
+
+
+.footersiteguide li{
+	list-style: none;	
+	width: 200px;
+	
+}
+
+.footersiteguide a {
+	font-weight:bold;
+	
+}
+.footersiteguide {
+	width: 220px;
+	float:left;
+	font-weight:bold;
+}
+
+a[rel="external"] {
+    background: url("/images/jp/external-link-icon.gif") no-repeat scroll 99% 40% transparent;
+    padding-right: 16px;
+}
+
+.hidden {
+	display: none;
+}
+
+ul.tabset li span.global-property-editor, ul.tabset li span.global-property-editor span {
+	background: none;
+}
+#subjectList .nosubjects {
+	color: #125AA7;
+}
+
+.blurb-edit-ui-icon { width: 40px; height: 18px; background-image: url(/images/jp/edit_pencil.gif); }
+.blurb-editor img {margin: 0;}
+
+/* extension to jp:box implementation */
+div.boxstart { display: none; }
+div.boxend { display: none; }
+
+/* we only want to see the recommend library form when we click the link!*/
+#recommendForm {
+	display: none;
+	}
+
+.rssicon {
+	float: right;
+	margin-top: 10px;
+}
+	
+.rssicon img {
+	margin:0;
+}

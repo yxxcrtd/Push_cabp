@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="ftpService" parent="baseTxProxy">
+		<property name="target">
+			<bean class="cn.digitalpublishing.service.impl.FtpServiceImpl" parent="baseService" />
+		</property>
+	</bean>
+
+	<bean id="ftpdirService" parent="baseTxProxy">
+		<property name="target">
+			<bean class="cn.digitalpublishing.service.impl.FtpDirServiceImpl" parent="baseService" />
+		</property>
+	</bean>
+
+	<bean id="userTemplate" parent="baseTxProxy">
+		<property name="target">
+			<bean class="cn.digitalpublishing.service.impl.UserTemplateServiceImpl" parent="baseService" />
+		</property>
+	</bean>
+
+	<bean id="onixService" parent="baseTxProxy">
+		<property name="target">
+			<bean class="cn.digitalpublishing.service.impl.OnixServiceImpl" parent="baseService" />
+		</property>
+	</bean>
+
+	<bean id="onixCodeService" parent="baseTxProxy">
+		<property name="target">
+			<bean class="cn.digitalpublishing.service.impl.OnixCodeServiceImpl" parent="baseService" />
+		</property>
+	</bean>
+	
+	<bean id="userTemplateNodeService" parent="baseTxProxy">
+		<property name="target">
+			<bean class="cn.digitalpublishing.service.impl.UserTemplateNodeServiceImpl" parent="baseService" />
+		</property>
+	</bean>
+	
+	<bean id="mappingService" parent="baseTxProxy">
+		<property name="target">
+			<bean class="cn.digitalpublishing.service.impl.MappingServiceImpl" parent="baseService" />
+		</property>
+	</bean>
+	
+	<bean id="contentService" parent="baseTxProxy">
+		<property name="target">
+			<bean class="cn.digitalpublishing.service.impl.ContentServiceImpl" parent="baseService" />
+		</property>
+	</bean>
+	
+	<bean id="rtemplateService" parent="baseTxProxy">
+		<property name="target">
+			<bean class="cn.digitalpublishing.service.impl.RTemplateServiceImpl" parent="baseService" />
+		</property>
+	</bean>
+	
+	<bean id="pushTaskService" parent="baseTxProxy">
+		<property name="target">
+			<bean class="cn.digitalpublishing.service.impl.PushTaskServiceImpl" parent="baseService" />
+		</property>
+	</bean>
+
+	<bean id="threadService" parent="baseTxProxy">
+		<property name="target">
+			<bean class="cn.digitalpublishing.service.impl.ThreadServiceImpl" parent="baseService" />
+		</property>
+	</bean>
+
+	<bean id="pushService" parent="baseTxProxy">
+		<property name="target">
+			<bean class="cn.digitalpublishing.service.impl.PushServiceImpl" parent="baseService" />
+		</property>
+	</bean>
+
+	<bean id="productService" parent="baseTxProxy">
+		<property name="target">
+			<bean class="cn.digitalpublishing.service.impl.ProductServiceImpl" parent="baseService" />
+		</property>
+	</bean>
+	
+	<bean id="booksService" parent="baseTxProxy">
+		<property name="target">
+			<bean class="cn.digitalpublishing.service.impl.BooksServiceImpl" parent="baseService" />
+		</property>
+	</bean>
+	
+	<bean id="orderDetailService" parent="baseTxProxy">
+		<property name="target">
+			<bean class="cn.digitalpublishing.service.impl.OrderDetailServiceImpl" parent="baseService" />
+		</property>
+	</bean>
+	
+	<bean id="orderService" parent="baseTxProxy">
+		<property name="target">
+			<bean class="cn.digitalpublishing.service.impl.OrderServiceImpl" parent="baseService" />
+		</property>
+	</bean>
+	
+	<bean id="emailService" parent="baseTxProxy">
+		<property name="target">
+			<bean class="cn.digitalpublishing.service.impl.EmailServiceImpl" parent="baseService" />
+		</property>
+	</bean>
+	
+	<bean id="pushStaService" parent="baseTxProxy">
+		<property name="target">
+			<bean class="cn.digitalpublishing.service.impl.PushStaServiceImpl" parent="baseService" />
+		</property>
+	</bean>
+</beans>

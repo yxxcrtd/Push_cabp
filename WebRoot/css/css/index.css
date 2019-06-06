@@ -1,0 +1,414 @@
+/* ************************************
+* file name: index.css
+* Create personnel: 李艳
+* Create Date: 2012-11-04
+* contact: looyoo1000@yahoo.com.cn
+* content: CNPIEC-首页样式文件
+************************************ */
+
+
+.advPic{
+	float:left;
+	width:650px;
+	height:270px;
+	margin:25px;
+}
+.advPic span{
+	float:left;
+	margin:10px 0;
+}
+.publications{float:left; width: 640px;min-height:160px; border: 1px solid #ccc; border-radius: 5px; padding: 5px; margin: 5px 0 5px 25px; }
+.packageBook{
+	float:left;
+	width:640px;
+	margin-left:8px;
+}
+.packageBook ul{
+	float:left;
+	width:640px;
+	margin:20px 0;
+}
+.packageBook ul li{
+	float:left;
+	width:128px;
+	height:140px;
+}
+.packageBook ul li a{
+	float:left;
+	width:120px;
+	height:140px;
+}
+.packageBook ul li a:hover{
+	float:left;
+	width:120px;
+	height:140px;
+	border:1px solid #ddd;
+}
+.packageBook ul li a img{
+	border:none;
+}
+.fc{
+	float:left;
+	width:640px;
+	color: #23ABCF;
+    font-family: arial,verdana,helvetica,sans-serif;
+    font-size: 20px;
+	text-align:left;
+	height:30px;
+	line-height:30px;
+}
+.publications h4 {
+}
+h1, h2, h3, h4, h5, h6 {
+    float:left;
+    color: #111111;
+}
+h4 {
+    font-size: 1.2em;
+    line-height: 0.2em;
+    margin-bottom: 0.05em;
+}
+h5 a{
+	float;left;
+	color:#1159bd;
+	font-weight:bold;
+	font-size: 12px;
+	font-family:"arial";
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #111111;
+    font-weight: normal;
+}
+.bookImg {
+    float: left;
+    margin-right: 15px;
+    width: 100px;
+}
+.bookImg img{
+    width: 100px;
+	height:140px;
+}
+.bookTitle{
+	float:left;
+	width:295px;
+	margin-right:10px;
+}
+.bookTitle ul{
+	float:left;
+	min-width:104px;
+}
+.bookTitle ul li{
+	float:left;
+	width:98%;
+	height:20px;
+	line-height:20px;
+	font-size: 12px;
+	font-family:"arial";
+	overflow:hidden;
+}
+.bookTitle ul li span{
+	float:left;
+	font-weight:bold;
+	font-size: 12px;
+	font-family:"arial";
+	margin-right:5px;
+	
+}
+.bookTitle ul li a{
+	float:left;
+	text-decoration:underline;
+	color:#1159bd;
+	word-break:break-all;
+	text-align:left;
+	font-size: 12px;
+	font-family:"arial";
+}
+.bookInfo{
+	float:left;
+	width:380px;
+	text-align:left;
+	font-family:arial;
+	font-size:12px;
+	line-height:18px;
+}
+.formInput{
+	width:230px;
+	margin:10px auto;
+}
+.formInput input{
+	width:197px;
+	margin:7px auto;
+	border:1px solid #CC9C78;
+}
+.formInput ul{
+	text-align:left;
+	width:197px;
+	margin:5px auto;
+}
+.formInput ul li{
+	float:left;
+	width:200px;
+	height:25px;
+}
+.formInput ul li a{
+	float:left;
+	width:100px;
+	text-decoration:underline;
+	color:#1159bd;
+}
+.formInput ul li span{
+	float:left;
+	width:60px;
+}
+.formInput ul li input{
+	float:left;
+	width:30px;
+	margin-top:0px;
+	border:none;
+}
+.button{
+	float:left;
+	color:#fff;
+	min-width:70px;
+	height:24px;
+	margin:5px 0 0 45px;
+}
+.button p{
+	float:left;
+	color:#fff;
+	min-width:50px;
+	height:24px;
+	line-height:24px;
+	vertical-align:middle;
+	background: url("../../images/picnic_button_left.png") no-repeat scroll left center transparent;
+	padding-left:20px;
+}
+.box{
+	margin:0 auto;
+	width:200px;
+	height:100%;
+	border:1px solid #b5b9bc;
+	overflow: hidden;
+}
+.boxInner{
+	width:188px;
+	height:100%;
+	border:1px solid #efefef;
+	padding:10px 5px;
+	overflow: hidden;
+}
+.boxInner p{
+	width:170px;
+	height:22px;
+	line-height:22px;
+	vertical-align:middle;
+	background:#848484;
+	margin-left:4px;
+	padding-left:10px;
+	text-align:left;
+	font-size:14px;
+	color:#fff;
+	font-family: "Microsoft YaHei";
+}
+.boxInner a{
+	float:left;
+	width:170px;
+	height:18px;
+	line-height:18px;
+	padding:10px 0 0 5px;
+	vertical-align:middle;
+	text-align:left;
+	font-size:12px;
+	color:#1159bd;
+}
+.boxInner ul{
+	float:left;
+	width:170px;
+	margin-top:10px;
+}
+.boxInner ul li{
+	float:left;
+	width:170px;
+	height:22px;
+	line-height:22px;
+	font-size:12px;
+	color:#111;
+}
+.boxInner ul li a img{
+	float:left;
+	width:22px;
+	height:14px;
+	margin:5px 15px;
+}
+.boxInner ul li a{
+	float:left;
+	width:170px;
+	height:22px;
+	line-height:22px;
+	font-size:12px;
+	color:#1159bd;
+	text-decoration:underline;
+}
+.boxInner ul li span{
+	float:right;
+	width:170px;
+	height:42px;
+	line-height:42px;
+	vertical-align:middle;
+	text-align:right;
+	font-size:12px;
+	color:#000;
+	font-weight:bold;
+}
+.boderBottom{
+	margin:0 auto;
+	background:url(../../images/picnic_content_bottom.jpg);
+	width:950px;
+	height:10px;
+}
+.bottomContainer {
+    float:left;
+	background: #BDBDBD;
+    height: 150px;
+	width:100%;
+}
+.footer {
+    margin:20px auto;
+	width:950px;
+}
+.hotLine{
+	float:left;
+	width:20%;
+	margin-left:200px;
+	margin-top:20px;
+}
+.hotLine a{
+    float:left;
+	width:300px;
+	font-size:16px;
+	font-weight:bold;
+	color:#8E8E8E;
+	text-decoration:none;
+	font-family: "Microsoft YaHei";
+	text-align:left;
+}
+.hotLine ul{
+    float:left;
+	width:300px;
+}
+.hotLine ul li{
+    float:left;
+	width:100%;
+	font-size:12px;
+	font-weight:bold;
+	color:#8E8E8E;
+	font-family: "Arial,宋体";
+	text-align:left;
+	height:20px;
+	line-height:20px;
+	vertical-align:middle;
+}
+.hotLine ul li a{
+    float:left;
+	width:100%;
+	font-size:12px;
+	font-weight:bold;
+	color:#8E8E8E;
+	font-family: "Arial,宋体";
+	text-align:left;
+}
+.hotLine ul li a:hover{
+    float:left;
+	width:100%;
+	font-size:12px;
+	font-weight:bold;
+	color:#8E8E8E;
+	font-family: "Arial,宋体";
+	text-align:left;
+}
+
+
+
+
+
+.footer ul{
+    float:right;
+	width:60%;
+}
+.footer ul li{
+    float:left;
+	width:180px;
+	font-size:16px;
+	font-weight:bold;
+	color:#8E8E8E;
+	font-family: "Microsoft YaHei";
+	text-align:left;
+}
+.footer ul li a{
+    float:left;
+	width:180px;
+	font-size:16px;
+	font-weight:bold;
+	color:#8E8E8E;
+	text-decoration:none;
+	font-family: "Microsoft YaHei";
+	text-align:left;
+}
+.footer ul li a:hover{
+    float:left;
+	width:180px;
+	font-size:16px;
+	font-weight:bold;
+	color:#efefef;
+	text-decoration:underline;
+	font-family: "Microsoft YaHei";
+	text-align:left;
+}
+.footer ul li ul{
+    float:left;
+	width:180px;
+	text-align:left;
+}
+.footer ul li ul li{
+    float:left;
+	width:100%;
+	font-size:12px;
+	color:#8E8E8E;
+	font-family: " Arial,宋体";
+	text-align:left;
+	height:22px;
+	line-height:22px;
+	vertical-align:middle;
+}
+.footer ul li ul li a{
+    float:left;
+	width:100%;
+	height:22px;
+	line-height:22px;
+	vertical-align:middle;
+	font-size:12px;
+	color:#8E8E8E;
+	font-family: "Arial,宋体";
+	text-align:left;
+}
+.footer ul li ul li a:hover{
+    float:left;
+	width:100%;
+	height:22px;
+	line-height:22px;
+	vertical-align:middle;
+	font-size:12px;
+	text-align:left;
+	color:#efefef;
+	text-decoration:underline;
+	font-family: "Arial,宋体";
+	text-align:left;
+}
+.copyright{
+	color:#fff;
+	background: #BDBDBD;
+}
+.copyright a{
+	color:#fff;
+	text-decoration:none;
+}

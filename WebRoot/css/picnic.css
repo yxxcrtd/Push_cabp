@@ -1,0 +1,144 @@
+body { background: #EBEBEB url(/images/picnic/picnic_top_back.jpg) top repeat-x; margin: 0px; }
+
+#maincontainerhead { background: #EBEBEB url(/images/picnic/picnic_top_back.jpg) top repeat-x; position: fixed; top: 0px; width: 100%; height: 41px; z-index: 1; }
+#navbar { background-color: #525357; height: 40px; border-bottom: 1px solid #000; margin: 0px auto; width: 920px; overflow: visible; }
+#navbar ul li { padding: 4px 0px; margin: 0px; float: left; overflow: visible; }
+#navbar ul li.active { background-color: #525357; color: #fff; padding: 4px 0px; margin: 0px; }
+#navbar ul li.active a { color: #fff; }
+#navbar ul li a.bordered { border-left: 1px solid #FFF; padding: 0px 2px; margin: 0px 2px; }
+#navbar #searchBox, #navbar #global-search-form, #navbar #searchDiv { display: inline; }
+#navbar #quickSearchBox { border: 1px solid #CC9C78; width: 300px; margin: 2px 3px 0px 10px; float: left; }
+#navbar #navbarright { float: right; }
+#navbar #navbarleft { float: left; }
+#navbar ul li a:hover { text-decoration: underline; }
+#navbar #searchbutton {
+	cursor: pointer; font-weight: normal; background: url(/images/picnic/picnic_button_left_noarrow.png) left no-repeat;
+	margin: 0px; color: #fff; border: 0px; height: 24px; padding: 0px 2px 6px 3px; float: left;
+}
+#navbar #searchmenucontainer { display: inline; position: relative; }
+#navbar #searchmenucontainer #searchoptions { display: inline; }
+#navbar #searchmenucontainer #searchoptions #searchoptionsbutton{ 
+	width: 30px; height: 25px; margin: -1px 0 0 0; padding: 0;
+}
+#navbar #searchmenucontainer #searchoptions #searchoptionsbutton { background:transparent url('/images/picnic/search_options_off.png') no-repeat; float: left; }
+#navbar #searchmenucontainer #searchoptions #searchoptionsbutton.selected { background:transparent url('/images/picnic/search_options_on.png') no-repeat; }
+
+#navbar #searchmenucontainer #searchoptions #searchoptionsbutton:hover { text-decoration: none; }
+#navbar #searchmenucontainer #searchoptions ul#searchoptionmenu {
+	position: absolute; top: 20px; left: -15px; background-color: #333; overflow: visible;
+	width: 210px; height: 85px; color: white; padding: 5px; z-index: 2; 
+}
+#navbar #searchmenucontainer #searchoptions ul.hidden { display: hidden; }
+#navbar #searchmenucontainer #searchoptions ul#searchoptionmenu li { float: left; clear: left; padding: 0; border: 0; margin: 0; }
+#navbar #searchmenucontainer #searchoptions ul#searchoptionmenu li a {
+	width: auto; float: none; height: auto; font-size: 0.8em; line-height: 1.2em; color: #fff;
+}
+#navbar #searchmenucontainer #searchoptions ul#searchoptionmenu li a.selected { font-weight: bold; }
+#navbar li a.advancedsearchbutton {
+	font-weight: normal; background: url(/images/picnic/picnic_button_left.png) top left no-repeat;
+	margin: 0 0 0 6px; color: #fff; border: 0px; padding: 2px 2px 6px 26px; height: 25px; float: left;
+}
+#navbar li a.advancedsearchbutton:hover { text-decoration: none; }
+#navbar li img { float: left; border: 0; margin: 0; }
+#banner.contain { overflow: visible; }
+
+#maincontainer { background: transparent url(/images/picnic/picnic_maincontainer_bottom.jpg) bottom repeat-x; padding-top: 50px; }
+#header { background: none; height: 60px; margin-bottom: 4px; }
+#header #logo { float: left; }
+#header #topnav { float: right; position: relative; top: 40px; right: 6px; }
+#header #topnav a.shoppingcart { background: transparent url(/images/picnic/icon_shopping.jpg) top left no-repeat; padding-left: 22px; }
+
+#bellowheadercontainer { background: #FFF url(/images/picnic/picnic_content_back.jpg) top repeat-y; width: 950px; }
+#sidebar_right { background: transparent url(/images/picnic/picnic_content_top.jpg) top right no-repeat; width: 200px; float: right; padding: 20px; }
+#sidebar_right #loginBoxShow div.userinput div.signinlabel { font-size: 5px; color: #DADDE2; display: block; }
+#sidebar_right #loginBoxShow div.signinlabel { display: inline; border-left: 2px solid #DADDE2; }
+#sidebar_right #loginBoxShow div.clearer { height: 5px; }
+#sidebar_right #loginBoxShow div.signedinas { color: #4a4a4a; padding-bottom: 5px; }
+#sidebar_right #loginBoxShow input#signname, #sidebar_right #loginBoxShow input#signpsswd { width: 195px; border: 1px solid #CC9C78; }
+#sidebar_right #loginBoxShow input.styledbutton 
+{ cursor: pointer; background: url(/images/picnic/picnic_button_85.png) top left no-repeat; margin-left: 20px; color: #fff; border: 0px; height: 24px; padding: 0px 40px 4px 25px; }
+#sidebar_right fieldset { padding: 0px; border: 0px; }
+#sidebar_right a.signoutlink, #sidebar_right a.signinlink { color: #88272E; text-decoration: none; padding-right: 10px; }
+#sidebar_right div#signoutlinkdiv { background: url(/images/picnic/signout_box_top.jpg) top repeat-x; padding: 8px 0; }
+#sidebar_right #searchWithinField { margin: 2px 0px 2px 15px; }
+#sidebar_right div.box { background: url(/images/picnic/picnic_box_back.jpg) top repeat-y; padding: 0px; border: 0px; margin: 0px; }
+#sidebar_right div.boxstart { display: block; background: url(/images/picnic/picnic_box_top.jpg) top left no-repeat; height: 10px; }
+#sidebar_right div.boxend { display: block; background: url(/images/picnic/picnic_box_bottom.jpg) bottom left no-repeat;  height: 10px; }
+#sidebar_right div.box h4 { background: #808080; color: #fff; padding: 2px 10px; margin: 5px 10px 18px 10px; }
+#sidebar_right div.box form { margin-bottom: 10px; }
+#sidebar_right div.box li, #sidebar_right div.box a { margin: 12px 15px; }
+
+#contentcontainer { float: left; margin-top: -70px; padding-left: 30px;  }
+#contentcontainer div.articletopright img, #contentcontainer div.pubtopright img { padding: 5px; margin: 0px; }
+#contentcontainer > span p, #contentcontainer > p { width: 650px; }
+#content { width: 685px; }
+#content #breadcrumb { background: transparent url(/images/picnic/picnic_content_top.jpg) top left no-repeat; width: 725px; height: 90px; font-size: 0px; float: left; }
+#contentend { float: left; width: 900px; padding: 10px 25px; }
+#contentend #bookmarks-container { float:left; width: 420px; height: 60px; }
+#contentend #pagefooterlinks { width: 250px; float: left; padding-top: 70px; }
+#contentend div.homegooglead { width: 620px; }
+#contentend span.emaillink { background: transparent url(/images/picnic/icon_email_21x15.png) top left no-repeat; padding-left: 23px; }
+#contentend span.printlink { background: transparent url(/images/picnic/icon_print_17x15.png) top left no-repeat; padding-left: 19px; margin-left: 10px; }
+#contentbottom { background: transparent url(/images/picnic/picnic_content_bottom.jpg) bottom no-repeat; height: 10px; margin-bottom: 50px;}
+
+#footer { background-color: #BDBDBD; height: 150px; padding: 32px; text-align: center; }
+#footer div.footersiteguide40 { text-align: left; color: #8E8E8E; width: 34%; }
+#footer div.footersiteguide20 { text-align: left; color: #8E8E8E; width: 22%; }
+#footer div.footersiteguide40 h3, #footer div.footersiteguide20 h3 { text-align: left; color: #8E8E8E; width: auto; }
+#footer h3 a:hover, #footer a:hover { text-decoration: underline; color: #D7D7D7; }
+#footer ul { margin-left: 0px; width: auto; }
+#footer ul li { width: auto; }
+#footer a { color: #8E8E8E; text-decoration: none; }
+#footer div.small, #footer div.small a { padding-top: 20px; color: #fff; text-decoration: none; }
+#footer a:hover, #footer div.small a:hover { text-decoration: underline; }
+
+.homecontent h1 { background: transparent url(/images/picnic/intro.gif) top left no-repeat; border: 0px; padding: 0px; margin: 0px; font-size: 0px; height: 275px; width: 690px; }
+.homecontent #subjects, .homecontent div.publications { width: auto; border: 1px solid #ccc; border-radius: 5px; padding: 5px; margin: 5px 0px; }
+.homecontent div.publications { width: 640px; }
+/* #searchContent .resultItem { width: auto; border: 1px solid #ccc; border-radius: 5px; padding: 5px; margin: 5px 0px; } */
+#searchContent .itemDescription { width: 450px; border: 1px solid #ccc; border-radius: 5px; padding: 5px; margin: 5px 0px; overflow: auto; }
+
+div.atoz ul { width: 450px; }
+div.nofacetmargin ul { width: 650px; }
+ul.separated-list>li { border: 1px solid #BDC0C5; border-radius: 5px; }
+ul.separated-list>li.odd { background: #f6f6f6; color: #000; margin: 10px 0px; }
+div.facets, div.issueBar { border: 1px solid #BDC0C5; padding: 5px; }
+div.facets h3, div.issueBar h4 { background: #808080; color: #fff; padding: 4px 10px; margin: 0px 0px 5px 0px; }
+div.facets a, div.issueBar a, ul.meta-list a, ul.navigate-resources a { color: #3F3F3F; text-decoration: none; }
+div.a_to_z a { color: #3F3F3F; border-right: 1px solid #3F3F3F; padding-right: 2px; }
+li>h5>a { color: #3f3F3F; }
+
+.submitsearch { background: url(/images/picnic/picnic_button_85.png) top left no-repeat; margin: 20px; color: #fff; height: 24px; padding-left: 22px; }
+.submitsearch a { background: none; border: 0px; font-size: 13px; }
+
+#locale_form { float: right; }
+#blurbeditpreview, #blurbeditconfirm, #blurbremoveconfirm { top: 45px; }
+
+#morelikethis { border: 1px solid #BDBDBD; padding: 0px; }
+#morelikethis h4 { color: #555; background-color: #DDD; padding: 10px; }
+#morelikethis ul.separated-list { padding: 10px; }
+
+#contentcontainer div.layoutbox { width: 180px; }
+#contentcontainer div.layoutboxrowwrapper { width: 400px; }
+
+span.recentcontentspan { padding-left: 10px; display: block; width: auto; font-family: courier; }
+span.recentcontentsummaryspan { padding-top: 10px; padding-right: 10px; display: block; width: auto; text-align: right; font-weight: bold; }
+
+span.blurb-editor { position: absolute; }
+span.blurb-editor img {margin-left: -10px; }
+div#accountdetails fieldset, div#ui-tabs-1 fieldset, div.accesstypeform form, div.editform form { width: 550px; }
+.useradmin-user-field .longlength { width: 360px; }
+
+div.subjectlist div.resultsnav p { margin-left: 193px; }
+div.subjectlist div.resultsnav ul li { margin-left: 175px; list-style-type: none; }
+div.subjectlist ul { border-top: 0px; }
+div.subjectlist ul.separated-list>li { width: 445px; margin-left: 10px; }
+
+a.launchfulltextlink { text-decoration: none; color: #fff; }
+span.readonlinelink { background: url(/images/picnic/read_PDF_back.png) top left no-repeat; width: 125px; height: 33px; display: block; padding: 5px 0 0 32px; font-size: 14px; }
+
+ul.subjectlist { width: 500px; }
+ul.subjectlist li { padding: 5px 30px; }
+ul.subjectlist li span.subjectident { font-weight: bold; }
+
+.paymentoptions ul {list-style:none;}

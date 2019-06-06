@@ -1,0 +1,20 @@
+
+/*  */
+
+/* we only want to see the recommend library form when we click the link!*/
+.overlayForm {
+	display: none;
+}
+
+.rssicon {
+	float: right;
+	margin-top: 10px;
+}
+	
+.rssicon img {
+	margin:0;
+}
+
+.pointer {
+   cursor: pointer;
+}

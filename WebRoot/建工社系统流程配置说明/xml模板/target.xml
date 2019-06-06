@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//NLM//DTD Book DTD v3.0 20070202//EN" "book3.dtd">
+
+<book xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:lang="en" dtd-version="3.0">
+  <book-meta>
+    <book-id pub-id-type="publisher-id"></book-id>
+    <book-title-group>
+      <book-title></book-title>
+    </book-title-group>
+    <contrib-group>
+      <contrib contrib-type="author">
+        <name>
+          <surname></surname>
+          <given-names></given-names>
+        </name>
+      </contrib>
+    </contrib-group>
+    <publisher>
+      <publisher-name></publisher-name>
+      <publisher-loc></publisher-loc>
+    </publisher>
+    <isbn pub-type="ppub"></isbn>
+    <pub-date pub-type="pub">
+      <day></day>
+      <month></month>
+      <year></year>
+    </pub-date>
+  </book-meta>
+  <body>
+    <book-part>
+      <book-part-meta>
+        <title-group>
+          <title></title>
+        </title-group>
+        <volume></volume>
+        <issue></issue>
+        <fpage></fpage>
+        <lpage></lpage>
+		<cover>
+          <mediaobject>
+            <imageobject condition="web">
+              <imagedata fileref="" format="GIF"/>
+            </imageobject>
+          </mediaobject>
+        </cover>
+        <self-uri xlink:href="" content-type="pdf"/>
+        <abstract></abstract>
+        <kwd-group>
+          <kwd></kwd>
+        </kwd-group>
+      </book-part-meta>
+    </book-part>
+  </body>
+</book>

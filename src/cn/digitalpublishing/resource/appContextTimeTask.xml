@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<!--管理触发器的总设置,管理我们的触发器列表,可以在bean的list中放置多个触发器。 -->
+	<!-- 总管理类 如果将lazy-init='false'那么容器启动就会执行调度程序 -->
+	<!--管理触发器的总设置,管理我们的触发器列表,可以在bean的list中放置多个触发器。 -->
+	<!-- 总管理类 如果将lazy-init='false'那么容器启动就会执行调度程序 -->
+	<bean autowire="no"
+		class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<!-- 配置所有的Trigger -->
+		<property name="triggers">
+			<list>
+				<ref bean="sourceDataTaskTrigger"/>
+			
+				<ref bean="splitAndAnalysisTaskTrigger"/>
+				
+				<ref bean="downloadFileTaskTrigger"/>
+			
+				<ref bean="pushTaskTrigger"/>
+			</list>
+			
+		</property>
+	</bean>
+    
+    <!-- ************************-自动下载源数据任务-开始************************************ -->
+    <bean id="sourceDataListener" class="cn.digitalpublishing.thread.SourceDataListener" scope="singleton"></bean>
+	<bean id="sourceDataTask" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+        <property name="targetObject">  
+            <ref bean="sourceDataListener" />  
+        </property>   
+        <property name="targetMethod"> 
+            <value>executeScan</value>  
+        </property>  
+    </bean>
+	
+	
+	<bean id="sourceDataTaskTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">  
+        <property name="jobDetail">  
+            <ref bean="sourceDataTask" />  
+        </property>  
+        <property name="cronExpression">   
+            <value>0/10 * * * * ?</value>
+        </property>  
+    </bean>
+     <!--************************-自动下载源数据任务-结束************************************ -->
+    
+    
+     <!-- ************************-拆分解析线程任务-开始************************************ -->
+    <bean id="splitAndAnalysisTaskListener" class="cn.digitalpublishing.thread.SplitAndAnalysisListener" scope="singleton"></bean>
+	<bean id="splitAndAnalysisTask" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+        <property name="targetObject">  
+            <ref bean="splitAndAnalysisTaskListener" />  
+        </property>   
+        <property name="targetMethod"> 
+            <value>executeScan</value>  
+        </property>  
+    </bean>
+	
+	<bean id="splitAndAnalysisTaskTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">  
+        <property name="jobDetail">  
+            <ref bean="splitAndAnalysisTask" />  
+        </property>  
+        <property name="cronExpression">   
+            <value>0/10 * * * * ?</value>
+        </property>  
+    </bean>
+     <!-- ************************-拆分解析线程任务-结束************************************ -->
+     
+      <!-- ************************-下载图书或期刊文件线程任务-开始************************************ -->
+    <bean id="downloadFileTaskListener" class="cn.digitalpublishing.thread.DownLoadFileListener" scope="singleton"></bean>
+	<bean id="downloadFileTask" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+        <property name="targetObject">  
+            <ref bean="downloadFileTaskListener" />  
+        </property>   
+        <property name="targetMethod"> 
+            <value>executeScan</value>  
+        </property>  
+    </bean>
+	
+	<bean id="downloadFileTaskTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">  
+        <property name="jobDetail">  
+            <ref bean="downloadFileTask" />  
+        </property>  
+        <property name="cronExpression">   
+            <value>0/10 * * * * ?</value>
+        </property>  
+    </bean>
+     <!-- ************************-下载图书或期刊文件线程任务-结束************************************ -->
+     
+     <!-- ************************-推送线程任务-开始************************************ -->
+    <bean id="pushTaskListener" class="cn.digitalpublishing.thread.PushListener" scope="singleton"></bean>
+	<bean id="pushTask" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+        <property name="targetObject">  
+            <ref bean="pushTaskListener" />  
+        </property>   
+        <property name="targetMethod"> 
+            <value>executeScan</value>  
+        </property>  
+    </bean>
+	
+	<bean id="pushTaskTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">  
+        <property name="jobDetail">  
+            <ref bean="pushTask" />  
+        </property>  
+        <property name="cronExpression">   
+            <value>0/10 * * * * ?</value>
+        </property>  
+    </bean>
+     <!-- ************************-下载图书或期刊文件线程任务-结束************************************ -->
+     
+</beans>

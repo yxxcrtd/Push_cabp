@@ -1,0 +1,59 @@
+td.left {
+	text-align: left;
+    text-vlign: middle;
+    padding-left: 10px;
+    background-color: #ffffff;
+    border: 1px solid #A8CBF1;
+}
+td.left2 {
+	 text-align: center;
+    text-vlign: middle;
+    padding-left: 180px;
+    background-color: #ffffff;
+    border: 1px solid #A8CBF1;
+}
+td.right {
+	text-vlign: middle;
+    padding-left: 6px;
+    background-color: #ffffff;
+    border: 1px solid #A8CBF1;
+    padding-right: 6px;
+}
+
+td.right3 {
+	text-vlign: middle;
+    padding: 0px;
+    background-color: #ffffff;
+    border: 1px solid #A8CBF1;
+}
+
+td.right2 {
+	text-vlign: middle;
+    padding-right: 180px;
+    background-color: #ffffff;
+    border: 1px solid #A8CBF1;
+}
+td.tab{
+	 text-align: center;
+	 text-vlign: middle;
+	 border-bottom: 1px solid #A8CBF1;
+}
+.button1{
+	BORDER-RIGHT: #2C59AA 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #2C59AA 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5); BORDER-LEFT: #2C59AA 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #2C59AA 1px solid
+	
+}
+.button1_mouseover {
+BORDER-RIGHT: #2C59AA 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #2C59AA 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#D7E7FA); BORDER-LEFT: #2C59AA 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #2C59AA 1px solid
+}
+button2{
+	padding: 1px 0px 0px 0px;
+	font-family:  arial, sans-serif;	
+	font-size:12px;
+	cursor: pointer;
+	color: #000;
+	background: #9CBAD6;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #DBE6F1 #7FA2CA #7FA2CA #DBE6F1;
+	
+}	

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <comment></comment>
+	<book>
+		<orderNo></orderNo>
+		<title></title>
+		<author></author>
+		<ISBN></ISBN>
+		<publishDate></publishDate>
+		<price></price>
+		<onPrice></onPrice>
+		<offPrice></offPrice>
+		<publisher></publisher>
+		<publisher_loc></publisher_loc>
+		<edition></edition>
+		<pages></pages>
+		<frame></frame>
+		<format></format>
+		<sheet></sheet>
+		<cover></cover>
+		<URL></URL>
+		<introduction></introduction>
+	</book>
+</books>

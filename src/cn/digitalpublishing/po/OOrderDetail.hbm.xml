@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="cn.digitalpublishing.po.OOrderDetail" table="T_OORDER">
+        <id name="id" type="java.lang.String">
+            <column name="id" length="32">
+            	<comment>id</comment>
+            </column>
+            <generator class="uuid.hex" />
+        </id>
+        
+        <property name="odetailNum" column="odetailNum" type="java.lang.Integer" />
+        
+        <property name="createdby" column="createdby" type="java.lang.String" length="128"  />
+        
+        <property name="createdon" type="java.util.Date">
+            <column name="createdon"/>
+        </property>
+		
+		<property name="updatedby" column="updatedby" type="java.lang.String" length="128" />
+		
+		<property name="updatedon" type="java.util.Date">
+            <column name="updatedon"/>
+        </property>
+		
+		<property name="name" column="name" type="java.lang.String" length="128"/>
+		
+		<property name="author" column="author" type="java.lang.String" length="128" />
+		
+		<property name="publisher" column="publisher" type="java.lang.String" length="512"/>
+		
+		<property name="pubid" column="pubid" type="java.lang.String" length="128"/>
+		
+		<property name="ip" column="ip" type="java.lang.String" length="128"/>
+		
+		<property name="listPrice" column="listPrice" type="java.lang.Double" length="512" />
+		
+		<property name="salePrice" column="salePrice" type="java.lang.Double" length="512"  />
+		
+		<property name="quantity" column="quantity" type="java.lang.Integer" length="512"  />
+		
+		<property name="itemType" column="itemType" type="java.lang.Integer"/>
+		
+		<property name="status" column="status" type="java.lang.Integer"/>
+		
+		<property name="settledPrice" column="settledPrice" type="java.lang.Double" length="512" />
+		
+		<property name="ourCode" column="ourCode" type="java.lang.String" length="512" />
+		
+		<property name="revocationDesc" column="revocationDesc" type="java.lang.String" length="512"  />
+		
+		<property name="remark" column="remark" type="java.lang.String" length="128" />
+		
+		<property name="discount" column="discount" type="java.lang.Double" length="128" />
+
+    </class>
+</hibernate-mapping>

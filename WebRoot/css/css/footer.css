@@ -1,0 +1,51 @@
+/* ************************************
+* file name: footer.css
+* Create personnel: 李艳
+* Create Date: 2012-11-04
+* contact: looyoo1000@yahoo.com.cn
+* content: CNPIEC- 底部样式文件
+************************************ */
+
+
+/* ================定义页面底部 begin==============*/
+.footerContainer{
+	float:left;
+	width:100%;
+	background: url(../../images/bgFooterBlack.jpg) 0 100% repeat-x;
+	*background: url(../../images/bgFooterBlack.jpg) 0 90% repeat-x;
+	height:85px;
+}
+.divFooter{
+	margin:5px auto;
+	width:1025px;
+	height:80px;
+	background:url(../../images/bgFooter.jpg) 0 0 no-repeat;
+}
+.leftFooter{
+	float:left;
+	width:650px;
+	height:80px;
+}
+.titleFooter{
+	margin:0 auto;
+	width:450px;
+	height:35px;
+	line-height:35px;
+	vertical-align:middle;
+	text-align:left;
+	color:#fff;
+	font-size:14px;
+	font-family: "Microsoft YaHei";
+	padding-top:5px;
+}
+.rightFooter{
+	float:left;
+	width:280px;
+	padding-top:10px;
+	line-height:24px;
+	vertical-align:middle;
+	text-align:left;
+	color:#fff;
+	font-size:12px;
+	font-family: "Microsoft YaHei";
+}

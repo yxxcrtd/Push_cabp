@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="daoFacade" class="cn.digitalpublishing.facade.DaoFacade">
+
+		<property name="ftpConfigureDao">
+			<bean class="cn.digitalpublishing.dao.FtpConfigureDao" parent="commonDao" />
+		</property>
+
+		<property name="ftpDirConfigureDao">
+			<bean class="cn.digitalpublishing.dao.FtpDirConfigureDao" parent="commonDao" />
+		</property>
+
+		<property name="userTemplateDao">
+			<bean class="cn.digitalpublishing.dao.UserTemplateDao" parent="commonDao" />
+		</property>
+
+		<property name="onixDao">
+			<bean class="cn.digitalpublishing.dao.OnixDao" parent="commonDao" />
+		</property>
+
+		<property name="onixCodeDao">
+			<bean class="cn.digitalpublishing.dao.OnixCodeDao" parent="commonDao" />
+		</property>
+		
+		<property name="userTemplateNodeDao">
+			<bean class="cn.digitalpublishing.dao.UserTemplateNodeDao" parent="commonDao" />
+		</property>
+
+		<property name="mappingDao">
+			<bean class="cn.digitalpublishing.dao.MappingDao" parent="commonDao" />
+		</property>
+		
+		<property name="tSourceDao">
+			<bean class="cn.digitalpublishing.dao.TSourceDao" parent="commonDao" />
+		</property>
+		
+		<property name="tProductDao">
+			<bean class="cn.digitalpublishing.dao.TProductDao" parent="commonDao" />
+		</property>
+		
+		<property name="contentDao">
+			<bean class="cn.digitalpublishing.dao.ContentDao" parent="commonDao" />
+		</property>
+		
+		<property name="rtemplateDao">
+			<bean class="cn.digitalpublishing.dao.RTemplateDao" parent="commonDao" />
+		</property>
+		
+		<property name="pushDao">
+			<bean class="cn.digitalpublishing.dao.PushDao" parent="commonDao" />
+		</property>
+		
+		<property name="pushTaskDao">
+			<bean class="cn.digitalpublishing.dao.PushTaskDao" parent="commonDao" />
+		</property>
+		
+		<property name="productDao">
+			<bean class="cn.digitalpublishing.dao.ProductDao" parent="commonDao" />
+		</property>
+		
+		<property name="booksDao">
+			<bean class="cn.digitalpublishing.dao.BooksDao" parent="commonDao" />
+		</property>
+		
+		<property name="orderDetailDao">
+			<bean class="cn.digitalpublishing.dao.OrderDetailDao" parent="commonDao" />
+		</property>
+		
+		<property name="orderDao">
+			<bean class="cn.digitalpublishing.dao.OrderDao" parent="commonDao" />
+		</property>
+		
+		<property name="emailDao">
+			<bean class="cn.digitalpublishing.dao.EmailDao" parent="commonDao" />
+		</property>
+		
+		<property name="pushStaDao">
+			<bean class="cn.digitalpublishing.dao.PushStaDao" parent="commonDao" />
+		</property>
+	</bean>
+
+</beans>

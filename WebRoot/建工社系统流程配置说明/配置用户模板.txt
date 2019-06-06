@@ -1,0 +1,76 @@
+﻿pusher系统流程配置
+------------------------------------------------------
+
+【目标FTP配置】
+
+FTP服务器设置到项目的uploadRoot下
+
+	F:\java_tool\apache-tomcat-7.0.6\webapps\Push_cabp\uploadRoot
+
+FTP文件夹：
+
+	文件路径：bookxml
+
+------------------------------------------------------
+
+【目标FTP配置】
+
+FTP服务器
+
+	Host: ftp.ingentaselect.com	 
+
+	IP: 78.154.116.16
+
+	Username: cnminsci
+
+	Password: new0nmon
+
+FTP文件夹：
+
+	文件路径：cabp
+
+------------------------------------------------------
+
+【模板管理-新增用户模板】
+
+	*模板分类：	用户模板
+
+	*名称：		用户模板
+	
+	*模板类型： 	图书
+
+	*FTP服务器： 	选择用户Ftp服务器
+
+	*数据元素： 	/books/book
+
+	*共同元素： 	/books/comment
+
+	*isbn： 	/books/book/ISBN
+
+	*图书名： 	/books/book/title
+
+	*出版社： 	/books/book/publisher
+
+	*数据编号： 	ISBN
+
+	*DLD验证： 	http://apache.org/xml/features/nonvalidating/load-external-dtd
+
+	*模板上传：	上传user.xml
+
+------------------------------------------------------
+
+【模板管理-新增目标模板】
+
+	模板分类： 	目标模板
+
+	*名称： 	目标模板
+
+	*模板类型： 	图书
+
+	*模板上传：	上传target.xml
+
+
+
+------------------------------------------------------
+
+【映射配置见：映射配置.jpg】

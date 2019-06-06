@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>javascript</title>
+<style type="text/css">
+
+v\:* {      behavior:url(#default#VML);    } 
+
+
+.serviceStarting1 .processNumber {
+	background: url("../images/user/icon_03.png") no-repeat scroll 0 0
+		rgba(0, 0, 0, 0);
+}
+
+.processNumber {
+	color: #fff;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,button,a
+	{
+	font-family: "Microsoft YaHei", Verdana;
+	margin: 0;
+	padding: 0;
+}
+</style>
+</head>
+<body align="center">
+
+	<!--  div id="svg" style="width:200px;height:200px;"></div>-->
+	<script type="text/javascript">
+		var cont;
+		var circle = new Function();
+		if (document.createElementNS) {
+			svgNS = "http://www.w3.org/2000/svg";
+			svg = document.createElementNS(svgNS, "svg");
+			SVG = (svg.x != null);
+
+			createSVGVML = function(o, antialias) {
+				cont = document.createElementNS(svgNS, "svg");
+				o.appendChild(cont);
+				svgAntialias = antialias;
+
+			}
+
+			circle = function(diam, color) {
+				var o = document.createElementNS(svgNS, "circle");
+
+				o.setAttribute("shape-rendering", false);
+				o.setAttribute("stroke-width", "2px");
+				o.setAttribute("stroke-color", color);
+				o.setAttribute("r", Math.round(diam / 2));
+
+				o.setAttribute("cx", (diam / 2 + 2) + "px");
+				o.setAttribute("cy", (diam / 2 + 2) + "px");
+				o.setAttribute("stroke", color);
+				o.setAttribute("fill", "green");
+				o.style.cursor = "pointer";
+				cont.appendChild(o);
+
+			}
+
+		} else if (document.createStyleSheet) {
+			createSVGVML = function(o, antialias) {
+				document.namespaces.add("v", "urn:schemas-microsoft-com:vml");
+				var style = document.createStyleSheet();
+				style.addRule('v\\:*', "behavior: url(#default#VML);");
+				style.addRule('v\\:*', "antialias: " + antialias + ";");
+				cont = o;
+			}
+			circle = function(diam, color) {
+				var o = document.createElement("v:oval");
+				o.style.position = "absolute";
+				o.style.cursor = "pointer";
+
+				o.strokeweight = 2;
+				o.strokeColor = color;
+				o.style.width = diam + "px";
+				o.style.height = diam + "px";
+
+				cont.appendChild(o);
+				try {
+					return o;
+				} finally {
+					o = null;
+				}
+			}
+
+		}
+		for ( var i = 0; i < 5; i++) {
+
+			var testDv = document.createElement("span");
+
+			testDv.id = "t" + i;
+
+			document.body.appendChild(testDv);
+
+			createSVGVML(document.getElementById(testDv.id));
+
+			circle(20, "green");
+
+			var span = document.getElementById(testDv.id);
+
+			span.addEventListener("click", function() {
+				alert(this.id);
+			}, true);
+
+		}
+
+	</script>
+
+</body>
+</html>

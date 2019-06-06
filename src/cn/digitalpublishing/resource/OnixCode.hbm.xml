@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="cn.digitalpublishing.po.OnixCode" table="T_ONIXCODE">
+        <id name="onixCodeID" type="java.lang.String">
+            <column name="OnixCodeID" length="32">
+            	<comment>OnixCodeID</comment>
+            </column>
+            <generator class="uuid.hex" />
+        </id>
+        
+        <property name="codeList" column="CodeList" type="java.lang.Integer" not-null="true" />
+        
+        <property name="codeValue" column="CodeValue" type="java.lang.String" length="5" not-null="true" />
+        
+        <property name="description" column="Description" type="java.lang.String" length="128" not-null="true" />
+        
+        <property name="notes" column="Notes" type="java.lang.String" length="512" not-null="false" />
+        
+        <property name="comment" column="Comment" type="java.lang.String" length="512" not-null="false" />
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="cn.digitalpublishing.po.PushSta" table="T_PushSta">
+        <id name="id" type="java.lang.String">
+            <column name="id" length="32">
+            	<comment>UUID主键</comment>
+            </column>
+            <generator class="uuid.hex" />
+        </id>
+        
+        <property name="endSta" type="java.lang.String">
+            <column name="endSta" length="32">
+            	<comment>当前文件最终状态</comment>
+            </column>
+        </property>
+        
+        <property name="taskId" type="java.lang.String">
+            <column name="taskId" length="32">
+            	<comment>taskid</comment>
+            </column>
+        </property>
+        
+        <property name="ftpsDate" type="java.util.Date">
+            <column name="ftpsDate" length="128">
+            	<comment>用户FTP下载开始时间点</comment>
+            </column>
+        </property>
+        
+        <property name="ftpeDate" type="java.util.Date">
+            <column name="ftpeDate" length="128">
+            	<comment>用户FTP下载结束时间点</comment>
+            </column>
+        </property>
+
+        <property name="tuisDate" type="java.util.Date">
+            <column name="tuisDate" length="32">
+            	<comment>推送系统的上传开始时间点</comment>
+            </column>
+        </property>
+        
+        <property name="tuieDate" type="java.util.Date">
+            <column name="tuieDate">
+            	<comment>推送系统的上传结束时间</comment>
+            </column>
+        </property>
+        
+        <property name="caisDate" type="java.util.Date">
+            <column name="caisDate" length="32">
+            	<comment>拆分开始时间点</comment>
+            </column>
+        </property>
+        
+        <property name="caieDate" type="java.util.Date">
+            <column name="caieDate">
+            	<comment>拆分结束时间点</comment>
+            </column>
+        </property>
+        
+         <property name="dabaoDate" type="java.util.Date">
+            <column name="dabaoDate" length="32">
+            	<comment>打包时间</comment>
+            </column>
+        </property>
+        
+        <property name="tuiDate" type="java.util.Date">
+            <column name="tuiDate" length="32">
+            	<comment>推送时间</comment>
+            </column>
+        </property>
+       
+    </class>   
+</hibernate-mapping>

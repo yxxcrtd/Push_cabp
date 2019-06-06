@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="cn.digitalpublishing.po.Onix" table="T_ONIX">
+        <id name="onixID" type="java.lang.String">
+            <column name="OnixID" length="32">
+            	<comment>OnixID</comment>
+            </column>
+            <generator class="uuid.hex" />
+        </id>
+        
+        <property name="nodePath" column="NodePath" type="java.lang.String" length="256" not-null="true" />
+        
+        <property name="shortTag" column="ShortTag" type="java.lang.String" length="32" />
+        
+        <property name="cardinality" column="Cardinality" type="java.lang.String" length="5" />
+        
+        <property name="codeList" column="CodeList" type="java.lang.Integer" />
+        
+        <property name="necessary" column="Necessary" type="java.lang.Boolean" not-null="true" />
+        
+        <property name="only" column="Only" type="java.lang.Boolean" not-null="true" />
+        
+        <property name="comment" column="Comment" type="java.lang.String" length="128" />
+        
+        <property name="length" column="Length" type="java.lang.Integer" />
+        
+<!--	<property name="limitation" column="Limitation" type="java.lang.Boolean" /> -->
+        
+<!--	<property name="conditions" column="Conditions" type="java.lang.String" length="128" /> -->
+        
+        <property name="example" column="Example" type="java.lang.String" length="256" />
+
+    </class>
+</hibernate-mapping>

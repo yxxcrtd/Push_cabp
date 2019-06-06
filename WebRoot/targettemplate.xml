@@ -1,0 +1,14 @@
+﻿<books>
+	<title></title>
+	<book>
+		<name></name>
+		<author></author>
+		<isbn></isbn>
+		<publisher></publisher>
+		<price></price>
+		<imagedata></imagedata>
+		<summary></summary>
+		<copyright></copyright>
+		<url></url>
+	</book>
+</books>

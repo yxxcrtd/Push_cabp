@@ -1,0 +1,147 @@
+#registrationContent {
+	color: rgb(51, 51, 51);
+}
+.useradmin-user-field {
+	overflow: hidden;
+}
+.useradmin-user-field input {
+	margin: 5px !important;
+}
+.useradmin-user-field textarea {
+	margin: 5px !important;
+}
+.useradmin-user-field select {
+	margin: 5px !important;
+}
+.regForm .form-field-label {
+	margin: 5px 0px; width: 150px; float: left;
+}
+.regLabel {
+	margin: 5px 0px; width: 150px; float: left;
+}
+.useradmin-user-field label {
+	margin: 5px 0px; width: 150px; float: left;
+}
+.useradmin-user-field label.error {
+	width: auto;
+}
+.regInput {
+	margin: 5px 0px; float: left;
+}
+.regForm input {
+	margin: 0px 5px; border: 1px solid rgb(127, 157, 185); width: 180px; float: left;
+}
+.regInput input {
+	margin: 0px 5px; border: 1px solid rgb(127, 157, 185); width: 180px; float: left;
+}
+.useradmin-user-field input {
+	margin: 0px 5px; border: 1px solid rgb(127, 157, 185); width: 180px; float: left;
+}
+.regForm textarea {
+	margin: 0px 5px; border: 1px solid rgb(127, 157, 185); width: 180px; height: 100px; float: left;
+}
+.regInput textarea {
+	margin: 0px 5px; border: 1px solid rgb(127, 157, 185); width: 180px; height: 100px; float: left;
+}
+.useradmin-user-field textarea {
+	margin: 0px 5px; border: 1px solid rgb(127, 157, 185); width: 180px; height: 100px; float: left;
+}
+.regForm select {
+	margin: 0px 5px; border: 1px solid rgb(127, 157, 185); width: 180px; float: left;
+}
+.regInput select {
+	margin: 0px 5px; border: 1px solid rgb(127, 157, 185); width: 180px; float: left;
+}
+.useradmin-user-field select {
+	margin: 0px 5px; border: 1px solid rgb(127, 157, 185); width: 180px; float: left;
+}
+.regInput .reqInd {
+	width: 1em; font-weight: bold; float: left;
+}
+.regForm .error {
+	float: left;
+}
+.regInput .error {
+	float: left;
+}
+.regInput .password-meter {
+	margin: 0px 5px; float: left;
+}
+.regInput .adminpassword-meter {
+	margin: 0px 5px; float: left;
+}
+.regInput .nonEditable {
+	margin: 0px 5px; float: left;
+}
+.error {
+	margin: 0px 5px; padding: 0px; border: 1px solid black;
+}
+label.error {
+	border: currentColor;
+}
+div.error {
+	border: currentColor; font-size: 1.3em; margin-left: 0px;
+}
+.clearer {
+	height: 0px; line-height: 0; clear: both; font-size: 0px;
+}
+.next {
+	float: right;
+}
+.nextCancel {
+	float: right;
+}
+.regStep1 {
+	margin: 0px 0px 10px; text-align: center; font-size: 0.8em; float: left;
+}
+.regStep2 {
+	margin: 0px 0px 10px; text-align: center; font-size: 0.8em; float: left;
+}
+.regStep3 {
+	margin: 0px 0px 10px; text-align: center; font-size: 0.8em; float: left;
+}
+.regStep2 {
+	margin-left: 30px; float: left;
+}
+.regStep3 {
+	margin-left: 30px; float: left;
+}
+.authentication {
+	display: none;
+}
+.authenticationAdmin {
+	display: none;
+}
+.usernamevalidator {
+	display: none;
+}
+.linkDisabled a {
+	color: rgb(200, 200, 200);
+}
+.authenticationselectionerror {
+	display: none;
+}
+.regConfirmationLinks li {
+	list-style-type: none;
+}
+.regInput .passwordadvice {
+	margin: 0px 5px; padding: 0px; width: 175px; font-size: 0.9em; float: left;
+}
+.changeusername {
+	float: left;
+}
+.nonEditable {
+	min-width: 180px;
+}
+.changeuserlabel {
+	display: none;
+}
+.useradmin-label-required {
+	color: red;
+}
+.form-label-required {
+	color: red;
+}
+.regForm fieldset legend {
+	margin-bottom: 10px;
+}
